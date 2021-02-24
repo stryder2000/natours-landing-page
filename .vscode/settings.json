@@ -1,10 +1,8 @@
 {
-  "workbench.colorTheme": "Oceanic Next (dimmed bg)",
-  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
   "editor.minimap.enabled": true,
   "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": true,
-  "editor.formatOnSave": true,
 
   "workbench.colorCustomizations": {
     "statusBar.background": "#333333",
@@ -16,5 +14,5 @@
   "css.validate": false,
   "scss.validate": false,
   "less.validate": false,
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
 }

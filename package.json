@@ -1,7 +1,7 @@
 {
   "name": "natours-landing-page",
   "version": "1.0.0",
-  "description": "This is the landing page website for my natours tours booking website",
+  "description": "This is the landing page for natours tours booking website",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
