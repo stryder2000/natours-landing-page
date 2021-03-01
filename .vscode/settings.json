@@ -8,7 +8,7 @@
     "editor.formatOnSave": true
   },
   "prettier.trailingComma": "none",
-  "prettier.tabWidth": 2,
+  "prettier.tabWidth": 4,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
   "prettier.bracketSpacing": true,
