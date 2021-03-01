@@ -464,6 +464,44 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 6rem); }
 
+.footer {
+  display: block;
+  padding: 10rem 0;
+  background-color: #333; }
+  .footer__logo-box {
+    display: block;
+    text-align: center; }
+  .footer__logo {
+    height: auto;
+    width: 15rem; }
+  .footer__navigation {
+    display: block; }
+  .footer__item {
+    border-top: 1px solid #999;
+    padding-top: 2.1rem;
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+    font-size: 1.35rem;
+    text-transform: uppercase; }
+    .footer__item:not(:last-child) {
+      padding-right: 1.2rem; }
+  .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    color: #f7f7f7;
+    display: inline-block;
+    transition: all 0.2s;
+    padding: 0.3rem; }
+  .footer__link:hover, .footer__link:active {
+    box-shadow: 0 0.7rem 1rem rgba(153, 153, 153, 0.7);
+    color: #55c57a;
+    transform: scale(1.2); }
+  .footer__copyright {
+    display: block;
+    border-top: 1px solid #999;
+    padding: 2.2rem;
+    font-size: 1.5rem; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
