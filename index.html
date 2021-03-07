@@ -9,7 +9,7 @@
             rel="stylesheet"
         />
 
-        <link rel="stylesheet" href="css/icon-font.css" />
+        <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
         <link rel="stylesheet" href="css/style.css" />
         <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
@@ -62,6 +62,7 @@
                 </ul>
             </nav>
         </div>
+
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="logo" class="header__logo" />
@@ -73,7 +74,7 @@
                         >is where life happens</span
                     >
                 </h1>
-                <a href="#" class="btn btn--white btn--animated"
+                <a href="#section-tours" class="btn btn--white btn--animated"
                     >Discover our tours</a
                 >
             </div>
@@ -184,7 +185,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-lg">
                     <h2 class="heading-secondary">Most Popular Tours</h2>
                 </div>
@@ -221,7 +222,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white"
+                                    <a href="#popup" class="btn btn--white"
                                         >Book now!</a
                                     >
                                 </div>
@@ -260,7 +261,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$497</p>
                                     </div>
-                                    <a href="#" class="btn btn--white"
+                                    <a href="#popup" class="btn btn--white"
                                         >Book now!</a
                                     >
                                 </div>
@@ -299,7 +300,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$897</p>
                                     </div>
-                                    <a href="#" class="btn btn--white"
+                                    <a href="#popup" class="btn btn--white"
                                         >Book now!</a
                                     >
                                 </div>
@@ -432,13 +433,26 @@
 
         <footer class="footer">
             <div class="footer__logo-box u-margin-bottom-lg">
-                <img
-                    src="/img/logo-green-2x.png"
-                    alt="Full Logo"
-                    class="footer__logo"
-                />
+                <picture class="footer__logo">
+                    <source
+                        srcset="
+                            /img/logo-green-small-1x.png 1x,
+                            /img/logo-green-small-2x.png 2x
+                        "
+                        src="/img/logo-green-small-2x.png"
+                        media="(max-width : 37.5em)"
+                    />
+                    <img
+                        srcset="
+                            /img/logo-green-1x.png 1x,
+                            /img/logo-green-2x.png 2x
+                        "
+                        src="/img/logo-green-2x.png"
+                        alt="Full Logo"
+                    />
+                </picture>
             </div>
-            <div class="row">
+            <div class="row u-center-text">
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
                         <ul class="footer__list">
@@ -474,5 +488,48 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img
+                        src="/img/nat-8.jpg"
+                        alt="Tour Photo"
+                        class="popup__img popup__img-p1"
+                    />
+                    <img
+                        src="/img/nat-9.jpg"
+                        alt="Tour Photo"
+                        class="popup__img popup__img-p2"
+                    />
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-sm">
+                        Start Booking now
+                    </h2>
+                    <h3 class="heading-tertiary u-margin-bottom-sm">
+                        Important &ndash; Please read these terms before booking
+                    </h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, prima officiis sit an, ea
+                        cibo bonorum atomorum nam. Sea dicam impedit neglegentur
+                        at, his veri contentiones no. Cum no iusto putent
+                        platonem, eam et minim consulatu, utinam civibus
+                        interesset et mel. Vide mucius audiam ex sed, ne cum
+                        doctus facilisis constituto, magna propriae accumsan cu
+                        est. Habeo gloriatur posidonium sea ei. Eum congue
+                        melius eu, ius menandri oportere gubergren ea. Labore
+                        epicurei salutandi eu qui, labore singulis no his.
+                        Mandamus quaerendum in vis, dicat similique pro cu. Ne
+                        mei libris inciderint, est id iudico comprehensam, per
+                        te choro vivendo percipit. Vide erat maluisset mei ea,
+                        ex mel quidam aliquip, vix cu tota reprimique. Clita
+                        constituto eam ne, eu usu amet appareat interesset.
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
